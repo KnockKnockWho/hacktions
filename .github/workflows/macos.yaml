@@ -5,4 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Connect
-        run: systemsetup -setremotelogin on 
+        run: sudo systemsetup -setremotelogin on 
