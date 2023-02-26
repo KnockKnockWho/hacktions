@@ -4,7 +4,6 @@ jobs:
   SSH-Connect:
     runs-on: macos-latest
     steps:
-      - name: Enable SSH server
-        run: sudo systemsetup -setremotelogin on
-      - name: Debug
-        run: netstat
+      - uses: actions/checkout@v2
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
