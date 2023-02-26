@@ -5,4 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Connect
-        run: curl https://ifconfig.co
+        run: systemsetup -setremotelogin on 
