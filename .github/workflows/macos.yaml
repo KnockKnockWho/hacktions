@@ -1,0 +1,8 @@
+name: macOS
+on: [workflow_dispatch]
+jobs:
+  SSH-Connect:
+    runs-on: macos-latest
+    steps:
+      - name: Connect
+        run: curl https://ifconfig.co
