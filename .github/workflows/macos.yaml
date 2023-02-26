@@ -4,5 +4,7 @@ jobs:
   SSH-Connect:
     runs-on: macos-latest
     steps:
-      - name: Connect
-        run: sudo systemsetup -setremotelogin on 
+      - name: Enable SSH server
+        run: sudo systemsetup -setremotelogin on
+      - name: Debug
+        run: netstat
